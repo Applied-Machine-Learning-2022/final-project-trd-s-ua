@@ -10,10 +10,10 @@ List all of the members who developed the project and
 link to each members respective GitHub profile
 -->
 Developed by: 
-- [member1](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
-- [member2](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member3](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member4](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
+- [member1](https://github.com/cbaker6) - `Ruben Priest_UARK`
+- [member2](https://github.com/cbaker6) - `Donovan Saat_UARK` 
+- [member3](https://github.com/cbaker6) - `Daniel Overton_UARK` 
+- [member4](https://github.com/cbaker6) - `Trenton Harris_UARK`
 
 ## Description
 <!--
