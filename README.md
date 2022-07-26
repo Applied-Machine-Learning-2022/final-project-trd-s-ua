@@ -1,7 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8127833&assignment_repo_type=AssignmentRepo)
-<!--
-Name of your teams' final project
--->
+
 # final-project
 ## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the `PARTICIPATING_UNIVERSITY`
 
@@ -18,7 +16,7 @@ Developed by:
 # YOLO-Hand-Detection
 Scene hand detection for real world images.
 
-![Hand Detection Example](readme/export.jpg)
+![Hand Detection Example]([readme/export.jpg](https://raw.githubusercontent.com/cansik/yolo-hand-detection/master/readme/export.jpg))
 
 ### Idea
 To detect hand gestures, we first have to detect the hand position in space. This pre-trained network is able to extract hands out of a `2D RGB` image, by using the YOLOv3 neural network.
