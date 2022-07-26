@@ -143,4 +143,6 @@ Tim Marshall, Zachary Nelson, John Torcasio, Andy Falconer, Sherise, Alexis Brow
 
 ```
 This README.md is credited to the github user "cansik" for the hand detection model using YOLOv3
+
+Please reach out to them for any questions via github
 ```
