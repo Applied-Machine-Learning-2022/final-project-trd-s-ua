@@ -1,0 +1,42 @@
+Team Members:
+Daniel Overton
+Donovan Saat
+Ruben Priest
+Trenton Harris
+
+Abstract:
+In the Hand Detection and Tracking project our goal is to develop an automatic hand gesture image classification using deep learning features that allow the AI to be able to recognize and identify a multitude of hands. Using features such as: YoloV3, Google Colab, Glob, ArgeParse, and OpenCV.
+
+
+Acknowledgement: 
+We would like to send a huge shoutout to Dr. Khao Luu, the TA’s Dat and Pha, and thank them for the guidance and assistance provided. And also we’d like to thank the GitHub user named ‘cansik’ for providing a base model for use to build off of.
+
+
+Initial Data Analysis:
+A github user by the name of cansik trained the data for 10 hours using an NVIDIA 1080TI with a multitude of YOLOv3 versions (YOLOv3, VOLOv3-Tiny, VOLOv3-Tiny-PRN). The one we will utilize within the colab is YOLOv3-Tiny for the sake of runtime and GPU usage with the downside of loss in detection capability due to our laptop’s hardware.
+
+
+Ethical Implications:
+Ethical implications are key to consider for any model as these considerations are how biases are minimized. In ours, there are two main categories: physical integrity and false recognition. For physical integrity, the following implications were kept in mind: racial or complexion descrimination, missing fingers or parts of the hand, genetic defects of the hand (underdeveloped hands/fingers), background. The other concerns are things to be avoided by those reading into the data gathered via the model. Things like gloves/objects resembling hands, image quality consideration (too low of quality means the model can’t discern a hand on its own), and reflections for the chance that it could effectively double detections.
+
+
+Solutions: 
+Our first solution to this detection model was a gesture classification model. After perfecting the model with 100% accuracy, it was apparent that detection is separate from classification. Classification models do not have the ability to accomplish real-time detection as they take images and use convolutional neural network’s image processing capabilities to essentially “sort” over 20,000 images from a chosen online kaggle dataset. While we did have a model with relatively high accuracy, it could only use images after being saved locally, forcing us to change directions.
+
+Following the classification model’s lack of features, discussions were had with the teacher assistants Pha and Dat. We were recommended to use the MIT Lab’s Repo as it completed everything necessary without altering much. After trying to use it for a few days, it ultimately came down to our hardware not being compatible nor strong enough. It required a linux system for ease of access and a stronger GPU to handle live video processing. These were solvable issues and had there been more time, this would have been the ideal solution.
+
+After further discussion with classmates and teacher assistants, we decided on using YOLOv3. YOLOv3 is perfect for real-time detection, with the only limitation being on the datasets we can find. We trained our model primarily with CMU Hand DB’s dataset. Another popular hand tracking program created by Victor Dibia used the Egohands dataset, so our model is trained to that dataset as well.
+
+
+Experimental Results:
+As seen from this screenshot, when we used the classification model, we were able to reach almost 100% accuracy after 10 epochs.
+https://media.discordapp.net/attachments/997147176490770432/1002282259908407447/unknown.png
+
+
+This is a screenshot from a video we filmed to detect hands, with boxes drawn around any that are seen. The highest confidence that we were able to reach was about 90%.
+https://media.discordapp.net/attachments/997147176490770432/1002283149931319410/unknown.png
+
+To minimize outside disturbance, objects lower than 30% confidence were dropped and ignored. Lowering this threshold in the future may better the end product in some scenarios, however for our general use, 30% is sufficient.
+
+Conclusions:
+While the end product is not completely accurate to the original goal wanted, our team is satisfied with the product. In the future, given more time and resources, we would be able to more accurately detect and classify hand gestures. It was a fun challenge, having to learn beyond what we learned from the previous six weeks leading up to this project.
